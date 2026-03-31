@@ -19,6 +19,7 @@ install:
 
 check:
     mise exec -- pre-commit run --all-files
+
 # Compilar el CV
 run:
     @mkdir -p {{OUTPUT_DIR}}

@@ -1,17 +1,15 @@
 // --------------------------------------------------------------------------------
-// ARCHIVO: components/theme.typ
-// DESCRIPCIÓN: Tokens de diseño globales. Este archivo es la
-//              "fuente de verdad" estética del CV.
+// Tokens de diseño globales. Este archivo es la "fuente de verdad" estética del CV.
 // --------------------------------------------------------------------------------
 
 /* ---- ---- Colores ---- ---- */
-#let background_color = rgb("#7A2F37") // Color borgoña (Howard Ong)
+#let background_color = rgb("#102131") // Color borgoña (Howard Ong)
 #let white_color = rgb("#FFFFFF") // Blanco puro
 
 /* ---- ---- Fuente y tipografía ---- ---- */
 #let font_family = "Poppins"
 
-#let font_size_heading_1 = 28pt  // Nombre en el header
+#let font_size_heading_1 = 36pt  // Nombre en el header
 #let font_size_heading_2 = 16pt  // Cargo y títulos de secciones principales
 #let font_size_heading_3 = 14pt  // Subtítulos/Empresas
 #let font_size_heading_4 = 12pt  // Títulos menores
@@ -31,4 +29,7 @@
 #let text_leading = 0.6em  // Espaciado entre líneas de un mismo párrafo (Interlineado)
 
 /* ---- ---- Dimensiones Específicas ---- ---- */
-#let header_height = 120pt // Altura del encabezado
+#let header_height = 140pt // Altura del encabezado
+
+// Ancho del panel de la izquierda
+#let left_panel_width = 200pt

@@ -4,17 +4,19 @@
 // --------------------------------------------------------------------------------
 
 #import "theme.typ": (
-  font_family, normal_font_size, page_margin_bottom, page_margin_left,
-  page_margin_right, text_leading,
+  font_family, header_height, left_panel_width, normal_font_size,
+  page_margin_bottom, page_margin_left, page_margin_right, text_leading,
 )
 #import "header.typ": header
+#import "left_panel.typ": left_panel
 
 // Función principal de configuración (Template)
 #let cv(
-  name: "TU NOMBRE", // Nombre del profesional
-  role: "TU CARGO", // Cargo o profesión actual
-  title: "CV", // Título del documento (metadatos)
-  body, // Contenido que el usuario escribe en main.typ
+  name: "TU NOMBRE",
+  surname: "TU APELLIDO",
+  role: "TU CARGO",
+  title: "CV",
+  body,
 ) = {
   // 1. Metadatos del documento
   set document(title: title, author: name)
@@ -22,7 +24,7 @@
   // 2. Configuración de página y márgenes "base" (A sangre para el header)
   set page(
     paper: "a4",
-    margin: (x: 0pt, y: 0pt),
+    margin: 0pt, // Sin márgenes globales para permitir que el header y el panel toquen los bordes
   )
 
   // 3. Configuración de texto base
@@ -38,17 +40,24 @@
     leading: text_leading,
   )
 
-  // 5. Estructura del documento
-  // --- Encabezado Automático ---
-  header(name: name, role: role)
+  // 5. Estructura del documento (Un solo grid para toda la página)
+  grid(
+    columns: 100%,
+    rows: (header_height, 1fr), // Header altura fija, resto altura flexible
+    gutter: 0pt,
 
-  // --- Cuerpo con márgenes ---
-  pad(
-    left: page_margin_left,
-    right: page_margin_right,
-    bottom: page_margin_bottom,
-    top: 1cm, // Un pequeño margen para separar del header
-  )[
-    #body
-  ]
+    // FILA 1: Encabezado
+    header(name: name, surname: surname, role: role),
+
+    // FILA 2: Contenido (Panel Izquierdo y Panel Derecho)
+    grid(
+      columns: (left_panel_width, 1fr),
+      rows: 100%,
+      gutter: 0pt,
+      left_panel(),
+      // Panel negro
+      pad(x: page_margin_right, y: 1cm)[#body],
+      // Panel derecho con el contenido del usuario
+    )
+  )
 }

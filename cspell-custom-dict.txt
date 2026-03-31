@@ -11,6 +11,8 @@ typst
 # Términos técnicos y variables
 
 # Nombres propios y empresas
+fontawesome
+linkedin
 
 # Códigos y abreviaciones
 
