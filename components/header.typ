@@ -13,14 +13,13 @@
   font_size_min, normal_font_size
 )
 
-#let image_path = "../assets/glacier.jpg"
 #let linkedin_icon_path = "../assets/icons/linkedin-in.svg"
-#let linkedin_url = "https://www.linkedin.com/in/kevin-cardenas-cruz/"
 
 #let header(
   name: "TU NOMBRE",
   surname: "TU APELLIDO",
   role: "TU CARGO",
+  linkedin_url: none,
 ) = {
   // 1. Construimos el componente del texto (Nombre y Cargo)
   let text_content = [

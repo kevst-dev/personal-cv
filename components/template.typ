@@ -9,12 +9,14 @@
 )
 #import "header.typ": header
 #import "left_panel.typ": left_panel
+#import "social.typ": social_block
 
 // Función principal de configuración (Template)
 #let cv(
   name: "TU NOMBRE",
   surname: "TU APELLIDO",
   role: "TU CARGO",
+  contact: (:),
   title: "CV",
   body,
 ) = {
@@ -47,14 +49,23 @@
     gutter: 0pt,
 
     // FILA 1: Encabezado
-    header(name: name, surname: surname, role: role),
+    header(
+      name: name,
+      surname: surname,
+      role: role,
+      linkedin_url: contact.at("linkedin_url", default: none)
+      ),
 
     // FILA 2: Contenido (Panel Izquierdo y Panel Derecho)
     grid(
       columns: (left_panel_width, 1fr),
       rows: 100%,
       gutter: 0pt,
-      left_panel(),
+      left_panel(
+        content: [
+          #social_block(contact: contact)
+        ],
+      ),
       // Panel negro
       pad(x: page_margin_right, y: 1cm)[#body],
       // Panel derecho con el contenido del usuario

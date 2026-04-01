@@ -4,7 +4,7 @@
 //              Ocupa un ancho fijo y se extiende verticalmente.
 // --------------------------------------------------------------------------------
 
-#import "theme.typ": left_panel_width, white_color
+#import "theme.typ": left_panel_width, white_color, page_margin_left, page_margin_top
 
 // Definimos el componente del panel izquierdo
 #let left_panel(content: []) = {
@@ -14,7 +14,7 @@
     fill: rgb("#F0F5F9"),
     width: left_panel_width,
     height: 100%, // En el contexto de un grid con altura definida, esto funcionará bien
-    inset: (x: 0.5cm, y: 1cm),
+    inset: (x: page_margin_left, y: page_margin_top),
     radius: 0pt,
   )[
     #content

@@ -6,8 +6,18 @@
 #import "components/template.typ": cv
 
 #show: cv.with(
-  name: "Kevin", // Tu nombre completo (en negrita y mayúsculas en el header)
-  surname: "Cardenas", // Tu apellido completo
-  role: "Data Scientist", // Tu cargo o título profesional actual
-  title: "Mi CV Profesional", // Título del PDF para los metadatos del archivo
+  name: "Kevin", 
+  surname: "Cardenas", 
+  role: "Data Scientist", 
+  contact: (
+    phone: "+51 987 654 321",
+    email: "kevin.cardenas@example.com",
+    // TODO: Agregar el enlace real a LinkedIn
+    linkedin: "linkedin.com/in/kevin-cardenas-cruz/",
+    linkedin_url: "https://www.linkedin.com/in/kevin-cardenas-cruz/",
+    // TODO: Agregar el enlace real a GitHub
+    github: "github.com/kevin-cardenas",
+    github_url: "https://github.com/kevin-cardenas",
+  ),
+  title: "Mi CV Profesional", 
 )
