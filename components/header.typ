@@ -5,27 +5,17 @@
 
 // TODO: Definir el enlace a LinkedIn
 
+#import "utils.typ": colored-icon
 #import "theme.typ": (
   background_color, font_family, font_size_heading_1, font_size_heading_2,
-  header_height, left_panel_width, page_margin_left, page_margin_top,
-  section_spacing, white_color, normal_font_size, font_size_min,
-  normal_font_size,
+  header_height, left_panel_width, page_margin_left,
+  page_margin_top, section_spacing, white_color, normal_font_size,
+  font_size_min, normal_font_size
 )
 
 #let image_path = "../assets/glacier.jpg"
 #let linkedin_icon_path = "../assets/icons/linkedin-in.svg"
 #let linkedin_url = "https://www.linkedin.com/in/kevin-cardenas-cruz/"
-
-#let colored-icon(path, hex_color, width_icon) = {
-  // 1. Leer el archivo como texto (string)
-  let svg_text = read(path)
-
-  // 2. Inyectar el atributo 'fill' en la etiqueta <svg>
-  let colored_svg = svg_text.replace("<svg", "<svg fill=\"" + hex_color + "\"")
-
-  // 3. Convertir a bytes y cargar la imagen
-  image(bytes(colored_svg), width: width_icon)
-}
 
 #let header(
   name: "TU NOMBRE",
