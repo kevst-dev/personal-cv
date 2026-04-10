@@ -5,11 +5,13 @@
 
 #import "theme.typ": (
   font_family, header_height, left_panel_width, normal_font_size,
-  page_margin_bottom, page_margin_left, page_margin_right, text_leading,
+  page_margin_bottom, page_margin_left, page_margin_right, section_spacing,
+  text_leading,
 )
 #import "header.typ": header
 #import "left_panel.typ": left_panel
 #import "social.typ": social_block
+#import "education.typ": education_block
 
 // Función principal de configuración (Template)
 #let cv(
@@ -17,6 +19,7 @@
   surname: "TU APELLIDO",
   role: "TU CARGO",
   contact: (:),
+  education: (),
   title: "CV",
   body,
 ) = {
@@ -64,6 +67,8 @@
       left_panel(
         content: [
           #social_block(contact: contact)
+          #v(section_spacing)
+          #education_block(education_list: education)
         ],
       ),
       // Panel negro

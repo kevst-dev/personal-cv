@@ -19,5 +19,27 @@
     github: "kevst-dev",
     github_url: "https://github.com/kevst-dev",
   ),
+  education: (
+    (
+      title: "Básica secundaria",
+      years: "2017",
+      institution: "Institución Educativa Integrado de Soacha",
+    ),
+    (
+      title: "Técnico en programación de software",
+      years: "2017",
+      institution: "Servicio Nacional de Aprendizaje - SENA",
+    ),
+    (
+      title: "Ingeniería de sistemas",
+      years: "2018 - 2023",
+      institution: "Corporación Universitaria Minuto de Dios",
+    ),
+    (
+      title: "Certificación ISO 27001 - Como auditor líder",
+      years: "2025",
+      institution: "Certiprof",
+    ),
+  ),
   title: "Mi CV Profesional",
 )

@@ -15,6 +15,8 @@ renderizar
 fontawesome
 linkedin
 github
+Soacha
+Certiprof
 
 # Códigos y abreviaciones
 
