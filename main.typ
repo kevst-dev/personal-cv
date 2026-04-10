@@ -45,7 +45,7 @@
   ),
   // Right panel
   profile: [
-    *Ingeniero de Sistemas* apasionado por el *software libre* y el ecosistema *Linux*. Con *3 años de experiencia* profesional en *desarrollo con Python* y *análisis de datos*, me especializo en la aplicación de técnicas de *ciencia de datos* para la toma de decisiones estratégicas. Cuento con una sólida trayectoria en el área de *auditoría*, destacándome por el uso de *análisis de datos para auditoría* y la automatización de procesos. Poseo una mentalidad analítica y creativa, enfocada en la *productividad* y la *comunicación efectiva*.
+    *Software Engineer* especializado en el diseño de arquitecturas robustas y escalables para el procesamiento masivo de datos. Con *3 años de experiencia* profesional, me enfoco en la implementación de patrones de diseño como *Arquitectura Hexagonal* y *DDD* para construir pipelines ETL mantenibles y eficientes. Experto en automatización de infraestructura, cultura de testing y despliegues en entornos Linux/Docker.
   ],
   experience: (
     (

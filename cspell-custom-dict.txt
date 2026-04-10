@@ -11,6 +11,7 @@ typst
 # Términos técnicos y variables
 renderizar
 destacándome
+mantenibles
 
 # Nombres propios y empresas
 fontawesome
