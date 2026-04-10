@@ -16,6 +16,7 @@
 #import "experience.typ": experience_block
 #import "skills.typ": skills_block
 #import "soft_skills.typ": soft_skills_block
+#import "languages.typ": languages_block
 
 // Función principal de configuración (Template)
 #let cv(
@@ -26,6 +27,7 @@
   experience: (),
   skills: (),
   soft_skills: (),
+  languages: (),
   title: "CV",
   body,
 ) = {
@@ -74,6 +76,8 @@
           #education_block(education_list: education)
           #v(section_spacing)
           #soft_skills_block(skills: soft_skills)
+          #v(section_spacing)
+          #languages_block(languages: languages)
         ],
       ),
 

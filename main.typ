@@ -76,5 +76,9 @@
       evidence: "Aseguramiento mediante testing riguroso (Unit/Integration) y flujos de CI/CD.",
     ),
   ),
+  languages: (
+    (name: "Inglés", level: "Técnico"),
+    (name: "Español", level: "Nativo"),
+  ),
   title: "Mi CV Profesional",
 )
