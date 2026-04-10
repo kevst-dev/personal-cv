@@ -54,8 +54,22 @@
       dates: "03/09/2022 - Actualidad",
       phone: "(601) 3394949",
       description: [
-        Lideré la transformación tecnológica del área de **Auditoría Interna**, diseñando e implementando desde cero **Pipelines ETL robustos** bajo **Arquitectura Hexagonal / DDD**. Mi perfil híbrido como desarrollador y auditor me permitió traducir complejas necesidades de negocio en procesos automatizados y seguros, con un enfoque crítico en la **detección de anomalías y gestión de riesgos**. Implementé flujos de **CI/CD** y administré servidores **Linux/Docker**, garantizando la integridad de los datos procesados y reduciendo significativamente la deuda técnica mediante una **cultura de testing rigurosa**.
+        Lideré la transformación tecnológica del área de *Auditoría Interna*, diseñando e implementando desde cero *Pipelines ETL robustos* bajo *Arquitectura Hexagonal / DDD*. Mi perfil híbrido como desarrollador y auditor me permitió traducir complejas necesidades de negocio en procesos automatizados y seguros, con un enfoque crítico en la *detección de anomalías y gestión de riesgos*. Implementé flujos de *CI/CD* y administré servidores *Linux/Docker*, garantizando la integridad de los datos procesados y reduciendo significativamente la deuda técnica mediante una *cultura de testing rigurosa*.
       ],
+    ),
+  ),
+  skills: (
+    (
+      category: "Architecture & Design",
+      items: ("Arquitectura Hexagonal", "Clean Code", "SOLID"),
+    ),
+    (
+      category: "Backend Development",
+      items: ("Python", "SQL", "Bash", "Pytest", "CI/CD"),
+    ),
+    (
+      category: "DevOps & Systems",
+      items: ("Linux Server Admin", "Docker", "Git"),
     ),
   ),
   title: "Mi CV Profesional",

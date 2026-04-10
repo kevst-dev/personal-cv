@@ -14,6 +14,7 @@
 #import "education.typ": education_block
 #import "profile.typ": profile_block
 #import "experience.typ": experience_block
+#import "skills.typ": skills_block
 
 // Función principal de configuración (Template)
 #let cv(
@@ -22,6 +23,7 @@
   education: (),
   profile: [],
   experience: (),
+  skills: (),
   title: "CV",
   body,
 ) = {
@@ -80,6 +82,8 @@
         #profile_block(content: profile)
         #v(section_spacing)
         #experience_block(experience_list: experience)
+        #v(section_spacing)
+        #skills_block(skill_groups: skills)
         #v(section_spacing)
         #body
       ],
