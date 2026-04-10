@@ -13,6 +13,7 @@ Pytest
 renderizar
 destacándome
 mantenibles
+entregables
 
 # Nombres propios y empresas
 fontawesome

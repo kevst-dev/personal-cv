@@ -23,16 +23,6 @@
   ),
   education: (
     (
-      title: "Básica secundaria",
-      years: "2017",
-      institution: "Institución Educativa Integrado de Soacha",
-    ),
-    (
-      title: "Técnico en programación de software",
-      years: "2017",
-      institution: "Servicio Nacional de Aprendizaje - SENA",
-    ),
-    (
       title: "Ingeniería de sistemas",
       years: "2018 - 2023",
       institution: "Corporación Universitaria Minuto de Dios",
@@ -70,6 +60,20 @@
     (
       category: "DevOps & Systems",
       items: ("Linux Server Admin", "Docker", "Git"),
+    ),
+  ),
+  soft_skills: (
+    (
+      name: "Traducción de Requerimientos",
+      evidence: "Conversión de necesidades de negocio en procesos automatizados con entregables claros.",
+    ),
+    (
+      name: "Liderazgo Técnico",
+      evidence: "Experiencia liderando y formando equipos bajo estándares de calidad de software.",
+    ),
+    (
+      name: "Cultura de Calidad",
+      evidence: "Aseguramiento mediante testing riguroso (Unit/Integration) y flujos de CI/CD.",
     ),
   ),
   title: "Mi CV Profesional",
