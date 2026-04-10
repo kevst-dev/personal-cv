@@ -42,5 +42,8 @@
       institution: "Certiprof",
     ),
   ),
+  profile: [
+    *Ingeniero de Sistemas* apasionado por el *software libre* y el ecosistema *Linux*. Con *3 años de experiencia* profesional en *desarrollo con Python* y *análisis de datos*, me especializo en la aplicación de técnicas de *ciencia de datos* para la toma de decisiones estratégicas. Cuento con una sólida trayectoria en el área de *auditoría*, destacándome por el uso de *análisis de datos para auditoría* y la automatización de procesos. Poseo una mentalidad analítica y creativa, enfocada en la *productividad* y la *comunicación efectiva*.
+  ],
   title: "Mi CV Profesional",
 )

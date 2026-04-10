@@ -13,7 +13,7 @@
 #let font_size_heading_2 = 16pt  // Cargo y títulos de secciones principales
 #let font_size_heading_3 = 14pt  // Subtítulos/Empresas
 #let font_size_heading_4 = 12pt  // Títulos menores
-#let normal_font_size = 11pt  // Estándar para el cuerpo del texto
+#let normal_font_size = 10pt  // Estándar para el cuerpo del texto
 #let font_size_small = 10pt  // Información secundaria
 #let font_size_min = 8pt   // Límite absoluto legible
 

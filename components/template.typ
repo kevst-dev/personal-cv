@@ -5,19 +5,21 @@
 
 #import "theme.typ": (
   font_family, header_height, left_panel_width, normal_font_size,
-  page_margin_bottom, page_margin_left, page_margin_right, section_spacing,
-  text_leading,
+  page_margin_bottom, page_margin_left, page_margin_right, page_margin_top,
+  section_spacing, text_leading,
 )
 #import "header.typ": header
 #import "left_panel.typ": left_panel
 #import "social.typ": social_block
 #import "education.typ": education_block
+#import "profile.typ": profile_block
 
 // Función principal de configuración (Template)
 #let cv(
   header_info: (:), // Sin valores por defecto, estructura limpia
   contact: (:),
   education: (),
+  profile: [],
   title: "CV",
   body,
 ) = {
@@ -68,7 +70,15 @@
       ),
 
       // Panel Derecho (Contenido principal)
-      pad(x: page_margin_right, y: 1cm)[#body],
+      pad(
+        x: page_margin_right,
+        top: page_margin_top,
+        bottom: page_margin_bottom,
+      )[
+        #profile_block(content: profile)
+        #v(section_spacing)
+        #body
+      ],
     )
   )
 }

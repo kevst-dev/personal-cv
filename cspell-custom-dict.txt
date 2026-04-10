@@ -10,6 +10,7 @@ typst
 
 # Términos técnicos y variables
 renderizar
+destacándome
 
 # Nombres propios y empresas
 fontawesome
