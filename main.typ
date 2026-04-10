@@ -49,12 +49,12 @@
   ],
   experience: (
     (
-      role: "Analista de datos en Auditoría Interna",
+      role: "Analista de Datos en Auditoría Interna",
       company: "Universidad de los Andes",
       dates: "03/09/2022 - Actualidad",
       phone: "(601) 3394949",
       description: [
-        Lideré proyectos de análisis utilizando herramientas como *Python*. Ejecuté análisis exhaustivos para identificar patrones y anomalías, proponiendo soluciones efectivas. Mis habilidades en *Python* permitieron manipular datos, realizar *modelados* y visualizar resultados, contribuyendo con ideas innovadoras y soluciones estratégicas para la toma de decisiones en *auditoría* y revisión de procesos.
+        Lideré la transformación tecnológica del área de **Auditoría Interna**, diseñando e implementando desde cero **Pipelines ETL robustos** bajo **Arquitectura Hexagonal / DDD**. Mi perfil híbrido como desarrollador y auditor me permitió traducir complejas necesidades de negocio en procesos automatizados y seguros, con un enfoque crítico en la **detección de anomalías y gestión de riesgos**. Implementé flujos de **CI/CD** y administré servidores **Linux/Docker**, garantizando la integridad de los datos procesados y reduciendo significativamente la deuda técnica mediante una **cultura de testing rigurosa**.
       ],
     ),
   ),
