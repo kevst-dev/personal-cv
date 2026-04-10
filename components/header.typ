@@ -15,12 +15,15 @@
 
 #let linkedin_icon_path = "../assets/icons/linkedin-in.svg"
 
-#let header(
-  name: "TU NOMBRE",
-  surname: "TU APELLIDO",
-  role: "TU CARGO",
-  linkedin_url: none,
-) = {
+/// Renderizar el encabezado del CV
+/// - info (dictionary): Objeto con name, surname, role y linkedin_url
+#let header(info: (:)) = {
+  // Extracción de datos del objeto info
+  let name = info.at("name", default: "")
+  let surname = info.at("surname", default: "")
+  let role = info.at("role", default: "")
+  let linkedin_url = info.at("linkedin_url", default: none)
+
   // 1. Construimos el componente del texto (Nombre y Cargo)
   let text_content = [
     #set text(fill: white_color, font: font_family)

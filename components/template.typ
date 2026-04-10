@@ -15,21 +15,19 @@
 
 // Función principal de configuración (Template)
 #let cv(
-  name: "TU NOMBRE",
-  surname: "TU APELLIDO",
-  role: "TU CARGO",
+  header_info: (:), // Sin valores por defecto, estructura limpia
   contact: (:),
   education: (),
   title: "CV",
   body,
 ) = {
   // 1. Metadatos del documento
-  set document(title: title, author: name)
+  set document(title: title, author: header_info.at("name", default: ""))
 
-  // 2. Configuración de página y márgenes "base" (A sangre para el header)
+  // 2. Configuración de página y márgenes "base"
   set page(
     paper: "a4",
-    margin: 0pt, // Sin márgenes globales para permitir que el header y el panel toquen los bordes
+    margin: 0pt,
   )
 
   // 3. Configuración de texto base
@@ -45,25 +43,22 @@
     leading: text_leading,
   )
 
-  // 5. Estructura del documento (Un solo grid para toda la página)
+  // 5. Estructura del documento
   grid(
     columns: 100%,
-    rows: (header_height, 1fr), // Header altura fija, resto altura flexible
+    rows: (header_height, 1fr),
     gutter: 0pt,
 
-    // FILA 1: Encabezado
-    header(
-      name: name,
-      surname: surname,
-      role: role,
-      linkedin_url: contact.at("linkedin_url", default: none),
-    ),
+    // FILA 1: Encabezado (Ahora independiente y modular)
+    header(info: header_info),
 
-    // FILA 2: Contenido (Panel Izquierdo y Panel Derecho)
+    // FILA 2: Contenido
     grid(
       columns: (left_panel_width, 1fr),
       rows: 100%,
       gutter: 0pt,
+
+      // Panel Izquierdo
       left_panel(
         content: [
           #social_block(contact: contact)
@@ -71,9 +66,9 @@
           #education_block(education_list: education)
         ],
       ),
-      // Panel negro
+
+      // Panel Derecho (Contenido principal)
       pad(x: page_margin_right, y: 1cm)[#body],
-      // Panel derecho con el contenido del usuario
     )
   )
 }
