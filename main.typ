@@ -6,18 +6,18 @@
 #import "components/template.typ": cv
 
 #show: cv.with(
-  name: "Kevin", 
-  surname: "Cardenas", 
-  role: "Data Scientist", 
+  name: "Kevin",
+  surname: "Cardenas",
+  role: "Data Scientist",
   contact: (
-    phone: "+51 987 654 321",
-    email: "kevin.cardenas@example.com",
+    phone: "+57 310 345 7875",
+    email: "kevst-dev@protonmail.com",
     // TODO: Agregar el enlace real a LinkedIn
-    linkedin: "linkedin.com/in/kevin-cardenas-cruz/",
-    linkedin_url: "https://www.linkedin.com/in/kevin-cardenas-cruz/",
+    linkedin: "kevin-cardenas",
+    linkedin_url: "https://www.linkedin.com/in/kevin-cardenas-163a01119",
     // TODO: Agregar el enlace real a GitHub
-    github: "github.com/kevin-cardenas",
-    github_url: "https://github.com/kevin-cardenas",
+    github: "kevst-dev",
+    github_url: "https://github.com/kevst-dev",
   ),
-  title: "Mi CV Profesional", 
+  title: "Mi CV Profesional",
 )

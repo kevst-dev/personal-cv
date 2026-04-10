@@ -9,14 +9,18 @@ Typst
 typst
 
 # Términos técnicos y variables
+renderizar
 
 # Nombres propios y empresas
 fontawesome
 linkedin
+github
 
 # Códigos y abreviaciones
 
 # Personas
 kevst
+kevin
+cardenas
 
 # Abreviaciones comunes

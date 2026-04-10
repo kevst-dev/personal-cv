@@ -53,8 +53,8 @@
       name: name,
       surname: surname,
       role: role,
-      linkedin_url: contact.at("linkedin_url", default: none)
-      ),
+      linkedin_url: contact.at("linkedin_url", default: none),
+    ),
 
     // FILA 2: Contenido (Panel Izquierdo y Panel Derecho)
     grid(

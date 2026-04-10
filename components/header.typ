@@ -8,9 +8,9 @@
 #import "utils.typ": colored-icon
 #import "theme.typ": (
   background_color, font_family, font_size_heading_1, font_size_heading_2,
-  header_height, left_panel_width, page_margin_left,
-  page_margin_top, section_spacing, white_color, normal_font_size,
-  font_size_min, normal_font_size
+  header_height, left_panel_width, page_margin_left, page_margin_top,
+  section_spacing, white_color, normal_font_size, font_size_min,
+  normal_font_size,
 )
 
 #let linkedin_icon_path = "../assets/icons/linkedin-in.svg"

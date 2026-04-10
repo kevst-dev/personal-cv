@@ -15,7 +15,7 @@
 #let font_size_heading_4 = 12pt  // Títulos menores
 #let normal_font_size = 11pt  // Estándar para el cuerpo del texto
 #let font_size_small = 10pt  // Información secundaria
-#let font_size_min = 9pt   // Límite absoluto legible
+#let font_size_min = 8pt   // Límite absoluto legible
 
 /* ---- ---- Márgenes de Página (Márgenes de "Marco") ---- ---- */
 #let page_margin_left = 1.5cm  // Punto medio entre estándar y estrecho (1.27cm - 2.54cm)

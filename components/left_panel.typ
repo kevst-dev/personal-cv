@@ -4,7 +4,9 @@
 //              Ocupa un ancho fijo y se extiende verticalmente.
 // --------------------------------------------------------------------------------
 
-#import "theme.typ": left_panel_width, white_color, page_margin_left, page_margin_top
+#import "theme.typ": (
+  left_panel_width, page_margin_left, page_margin_top, white_color,
+)
 
 // Definimos el componente del panel izquierdo
 #let left_panel(content: []) = {
