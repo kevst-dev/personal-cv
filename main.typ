@@ -12,6 +12,7 @@
     role: "Data Scientist",
     linkedin_url: "https://www.linkedin.com/in/kevin-cardenas-163a01119",
   ),
+  // Left panel
   contact: (
     phone: "+57 310 345 7875",
     email: "kevst-dev@protonmail.com",
@@ -42,8 +43,20 @@
       institution: "Certiprof",
     ),
   ),
+  // Right panel
   profile: [
     *Ingeniero de Sistemas* apasionado por el *software libre* y el ecosistema *Linux*. Con *3 años de experiencia* profesional en *desarrollo con Python* y *análisis de datos*, me especializo en la aplicación de técnicas de *ciencia de datos* para la toma de decisiones estratégicas. Cuento con una sólida trayectoria en el área de *auditoría*, destacándome por el uso de *análisis de datos para auditoría* y la automatización de procesos. Poseo una mentalidad analítica y creativa, enfocada en la *productividad* y la *comunicación efectiva*.
   ],
+  experience: (
+    (
+      role: "Analista de datos en Auditoría Interna",
+      company: "Universidad de los Andes",
+      dates: "03/09/2022 - Actualidad",
+      phone: "(601) 3394949",
+      description: [
+        Lideré proyectos de análisis utilizando herramientas como *Python*. Ejecuté análisis exhaustivos para identificar patrones y anomalías, proponiendo soluciones efectivas. Mis habilidades en *Python* permitieron manipular datos, realizar *modelados* y visualizar resultados, contribuyendo con ideas innovadoras y soluciones estratégicas para la toma de decisiones en *auditoría* y revisión de procesos.
+      ],
+    ),
+  ),
   title: "Mi CV Profesional",
 )
