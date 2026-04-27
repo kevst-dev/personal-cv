@@ -13,7 +13,7 @@
   normal_font_size,
 )
 
-#let linkedin_icon_path = "../assets/icons/linkedin-in.svg"
+#let github_icon_path = "../assets/icons/github-brands-solid-full.svg"
 
 /// Renderizar el encabezado del CV
 /// - info (dictionary): Objeto con name, surname, role y linkedin_url
@@ -22,7 +22,7 @@
   let name = info.at("name", default: "")
   let surname = info.at("surname", default: "")
   let role = info.at("role", default: "")
-  let linkedin_url = info.at("linkedin_url", default: none)
+  let linkedin_url = info.at("source_code_url", default: none)
 
   // 1. Construimos el componente del texto (Nombre y Cargo)
   let text_content = [
@@ -44,11 +44,11 @@
         columns: auto,
         // Una sola columna del ancho del icono
         rows: (auto, auto),
-        row-gutter: 0.2cm,
+        row-gutter: 0.6cm,
         // Espacio pequeño entre icono y texto
         align: center + horizon,
-        colored-icon(linkedin_icon_path, white_color.to-hex(), 2.4cm),
-        text(size: normal_font_size, weight: "regular")[Mi  LinkedIn],
+        colored-icon(github_icon_path, white_color.to-hex(), 2.4cm),
+        text(size: normal_font_size, weight: "regular")[Código fuente],
       )
     ]
   ]

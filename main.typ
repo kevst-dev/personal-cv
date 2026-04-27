@@ -10,7 +10,7 @@
     name: "Kevin",
     surname: "Cardenas",
     role: "Data Engineer",
-    linkedin_url: "https://www.linkedin.com/in/kevin-cardenas-163a01119",
+    source_code_url: "https://github.com/kevst-dev/personal-cv#",
   ),
   // Left panel
   contact: (
