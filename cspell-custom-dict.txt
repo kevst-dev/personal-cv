@@ -14,6 +14,9 @@ renderizar
 destacándome
 mantenibles
 entregables
+modularidad
+mantenibilidad
+Concernimientos
 
 # Nombres propios y empresas
 fontawesome
