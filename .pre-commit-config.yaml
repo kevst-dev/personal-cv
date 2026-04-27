@@ -1,0 +1,48 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: "v6.0.0"
+    hooks:
+      - id: check-added-large-files # Verifica archivos grandes
+      - id: check-case-conflict # Verifica conflictos de nombres de archivo
+      - id: check-merge-conflict # Verifica conflictos de fusión
+      - id: check-yaml # Verifica sintaxis y estructura YAML
+      - id: debug-statements # Busca declaraciones de depuración
+      - id: end-of-file-fixer # Añade una línea en blanco al final de los archivos
+      - id: trailing-whitespace # Elimina espacios en blanco al final de líneas
+      - id: mixed-line-ending
+        auto-correct: true
+        args: [--fix=lf]
+        exclude: '\.bat$'
+      - id: mixed-line-ending
+        auto-correct: true
+        args: [--fix=crlf]
+        files: '\.bat$'
+
+  - repo: local
+    hooks:
+      - id: typstyle
+        name: typstyle
+        entry: typstyle
+        language: system
+        files: \.typ$
+        args: ["-i"]
+
+  - repo: https://github.com/streetsidesoftware/cspell-cli
+    rev: v9.7.0
+    hooks:
+      - id: cspell
+        additional_dependencies:
+          - "@cspell/dict-es-es"
+        name: Check spelling in code and docs
+        args: ["--gitignore", "--show-context", "--show-suggestions"]
+
+  - repo: local
+    hooks:
+      - id: cspell-commit-msg
+        name: Check spelling in commit message
+        entry: cspell
+        language: node
+        stages: [commit-msg]
+        args: ["--locale=es,en", "--config=.cspell.json", "--no-progress", "--"]
+        pass_filenames: false
+        additional_dependencies: ["cspell"]

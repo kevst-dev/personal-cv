@@ -1,0 +1,20 @@
+# Diccionario personalizado para términos técnicos del proyecto
+# Una palabra por línea
+
+# Términos específicos del dominio
+
+# Herramientas y librerías del proyecto
+typstyle
+Typst
+typst
+
+# Términos técnicos y variables
+
+# Nombres propios y empresas
+
+# Códigos y abreviaciones
+
+# Personas
+kevst
+
+# Abreviaciones comunes

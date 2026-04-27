@@ -1,0 +1,8 @@
+[tools]
+pre-commit = "4.5.1"
+typst = "0.14.2"
+typstyle = "0.14.4"
+
+# También podríamos agregar variables de entorno, por ejemplo:
+# [env]
+# PATH = "/usr/local/bin:$PATH"
