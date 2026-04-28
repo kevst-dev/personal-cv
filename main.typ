@@ -9,8 +9,8 @@
   header_info: (
     name: "Kevin",
     surname: "Cardenas",
-    role: "Data Engineer",
-    source_code_url: "https://github.com/kevst-dev/personal-cv#",
+    role: "Data Analyst",
+    source_code_url: "https://github.com/kevst-dev/personal-cv",
   ),
   // Left panel
   contact: (
@@ -35,7 +35,7 @@
   ),
   // Right panel
   profile: [
-    *Software Engineer* especializado en el diseño de arquitecturas robustas y escalables para el procesamiento masivo de datos. Con *3 años de experiencia*, me enfoco en la implementación de patrones como *Arquitectura Hexagonal* para construir pipelines ETL mantenibles. Experto en automatización de infraestructura, cultura de testing (Pytest) y despliegues en entornos Linux/Docker.
+    *Data Analyst* con base sólida en ingeniería de datos y *3 años de experiencia* construyendo pipelines confiables que alimentan tableros en *Power BI* y modelos ad-hoc en *Pandas, Polars y PySpark*. Combino prácticas de *arquitectura hexagonal* y automatización *CI/CD* para entregar análisis reproducibles sobre *Databricks* y entornos Linux/Docker, traduciendo señales complejas en decisiones accionables para negocio.
   ],
   experience: (
     (
@@ -47,21 +47,22 @@
         - Lideré la transformación tecnológica del área mediante el diseño de *Pipelines ETL* desde cero bajo *Arquitectura Hexagonal*, sustituyendo procesos manuales por flujos automatizados.
         - Implementé flujos de *CI/CD* y administración de contenedores *Docker*, garantizando la integridad de los datos y estableciendo una *cultura de testing rigurosa* con Pytest.
         - Actué como puente técnico para traducir requerimientos de negocio en procesos automatizados y seguros, enfocados en la detección de anomalías y gestión de riesgos.
+        - Diseñé tableros ejecutivos en *Power BI* y reportes automatizados en *Pandas*, reduciendo tiempos de preparación de hallazgos para auditoría.
       ],
     ),
   ),
   skills: (
     (
-      category: "Architecture & Design",
-      items: ("Arquitectura Hexagonal", "Clean Code", "SOLID"),
+      category: "Analítica & BI",
+      items: ("Power BI", "Pandas", "Polars", "SQL"),
     ),
     (
-      category: "Backend Development",
-      items: ("Python", "SQL", "Bash", "Pytest", "CI/CD"),
+      category: "Plataformas de Datos",
+      items: ("PySpark", "Databricks", "Delta Lake", "ETL/ELT"),
     ),
     (
-      category: "DevOps & Systems",
-      items: ("Linux Server Admin", "Docker", "Git"),
+      category: "DevOps & Calidad",
+      items: ("Arquitectura Hexagonal", "Bash", "CI/CD", "Pytest", "Docker", "Linux Server Admin"),
     ),
   ),
   soft_skills: (
