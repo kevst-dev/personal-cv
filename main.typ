@@ -62,7 +62,14 @@
     ),
     (
       category: "DevOps & Calidad",
-      items: ("Arquitectura Hexagonal", "Bash", "CI/CD", "Pytest", "Docker", "Linux Server Admin"),
+      items: (
+        "Arquitectura Hexagonal",
+        "Bash",
+        "CI/CD",
+        "Pytest",
+        "Docker",
+        "Linux Server Admin",
+      ),
     ),
   ),
   soft_skills: (

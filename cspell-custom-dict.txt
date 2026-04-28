@@ -17,6 +17,7 @@ entregables
 modularidad
 mantenibilidad
 Concernimientos
+accionables
 
 # Nombres propios y empresas
 fontawesome
